@@ -445,6 +445,7 @@ cmProcess::Exception cmProcess::GetExitException()
 
 std::string cmProcess::GetExitExceptionString()
 {
+  /*
   std::string exception_str;
 #if defined(_WIN32)
   switch (this->ExitValue) {
@@ -716,4 +717,7 @@ std::string cmProcess::GetExitExceptionString()
   }
 #endif
   return exception_str;
+   */
+  // TODO: Find a way to make the exception text generation work again
+  return "Exception (the code for generating this error message had to be deleted to make the windows xp port work)";
 }
